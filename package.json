@@ -1,0 +1,28 @@
+{
+  "name": "kld-affine",
+  "version": "0.0.1",
+  "description": "A collection of classes used in affine geometry",
+  "author": {
+    "name": "Kevin Lindsey",
+    "email": "kevin@kevlindev.com"
+  },
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thelonious/kld-affine.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "expresso"
+  },
+  "keywords": [
+    "affine",
+    "point",
+    "vector"
+  ],
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">= 0.10.4"
+  }
+}
