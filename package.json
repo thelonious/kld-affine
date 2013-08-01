@@ -1,6 +1,6 @@
 {
   "name": "kld-affine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of classes used in affine geometry",
   "author": {
     "name": "Kevin Lindsey",
@@ -21,6 +21,7 @@
     "vector"
   ],
   "devDependencies": {
+    "expresso": "0.9.2"
   },
   "engines": {
     "node": ">= 0.10.4"
