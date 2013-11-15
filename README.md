@@ -22,17 +22,17 @@ A class used to represent two-dimensional points on a plane. This currently supp
 * add
 * addEquals - deprecated
 * rmoveTo - deprecated
-* scalarAdd
+* scalarAdd - deprecated
 * scalarAddEquals - deprecated
 * subtract
 * subtractEquals - deprecated
-* scalarSubtract
+* scalarSubtract - deprecated
 * scalarSubtractEquals - deprecated
 * multiply
 * multiplyEquals - deprecated
 * divide
 * divideEquals - deprecated
-* compare
+* compare - deprecated
 * equals
 * lerp
 * distanceFrom
@@ -48,6 +48,7 @@ Vector2D
 --------
 A class used to represent a two-dimensional vector. This currently supports the following methods:
 
+* Vector2D.fromPoints
 * length
 * dot
 * cross
@@ -67,22 +68,28 @@ A class used to represent a two-dimensional vector. This currently supports the 
 * transform
 * equals
 * toString
-* Vector2D.fromPoints
 
 Matrix2D
 --------
 A class used to represent affine transformations. This current supports the following methods:
 
+* Matrix2D.IDENTITY
 * multiply
 * inverse
 * translate
 * scale
+* scaleAt
 * scaleNonUniform
+* scaleNonUniformAt
 * rotate
+* rotateAt
 * rotateFromVector
 * flipX
 * flipY
 * skewX
 * skewY
 * equals
+* isIdentity
+* isInvertible
+* getScale
 * toString
