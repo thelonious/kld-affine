@@ -1,7 +1,7 @@
 {
   "name": "kld-affine",
-  "version": "0.0.4",
-  "description": "A collection of classes used in affine geometry",
+  "version": "0.0.5",
+  "description": "A collection of classes used with affine geometry",
   "author": {
     "name": "Kevin Lindsey",
     "email": "kevin@kevlindev.com"

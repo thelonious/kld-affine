@@ -1,7 +1,7 @@
 kld-affine
 ==========
 
-A collection of classes used in affine geometry. This currently consists of the following:
+A collection of classes used for affine geometry. This currently consists of the following:
 
 * Point2D
 * Vector2D
@@ -38,6 +38,7 @@ A class used to represent two-dimensional points on a plane. This currently supp
 * distanceFrom
 * min
 * max
+* transform
 * toString
 * setXY - deprecated
 * setFromPoint - deprecated
@@ -63,6 +64,7 @@ A class used to represent a two-dimensional vector. This currently supports the 
 * perp
 * perpendicular
 * project
+* transform
 * equals
 * toString
 * Vector2D.fromPoints
