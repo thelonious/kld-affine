@@ -7,7 +7,9 @@ A collection of classes used for affine geometry. This currently consists of the
 * Vector2D
 * Matrix2D
 
-These have been extracted from kld-intersections so they can stand alone. As such, there are some parts of the API that I want to remove, but I will need to update kld-intersections before being able to do that. Specifically, I would like to remove all self-mutable methods in preference of a more functional approach that creates a new instance with each modification.
+These have been extracted from kld-intersections so they can stand alone.
+
+Please note that as of version 0.0.7, all of the self-modifying functions (like addEquals, subtractEquals, etc.) have been removed.
 
 Install
 -------
@@ -20,19 +22,9 @@ A class used to represent two-dimensional points on a plane. This currently supp
 
 * clone
 * add
-* addEquals - deprecated
-* rmoveTo - deprecated
-* scalarAdd - deprecated
-* scalarAddEquals - deprecated
 * subtract
-* subtractEquals - deprecated
-* scalarSubtract - deprecated
-* scalarSubtractEquals - deprecated
 * multiply
-* multiplyEquals - deprecated
 * divide
-* divideEquals - deprecated
-* compare - deprecated
 * equals
 * lerp
 * distanceFrom
@@ -40,9 +32,6 @@ A class used to represent two-dimensional points on a plane. This currently supp
 * max
 * transform
 * toString
-* setXY - deprecated
-* setFromPoint - deprecated
-* swap - deprecated
 
 Vector2D
 --------
@@ -55,15 +44,10 @@ A class used to represent a two-dimensional vector. This currently supports the 
 * cross
 * determinant
 * unit
-* unitEquals - deprecated
 * add
-* addEquals - deprecated
 * subtract
-* subtractEquals - deprecated
 * multiply
-* multiplyEquals - deprecated
 * divide
-* divideEquals - deprecated
 * angleBetween
 * perp
 * perpendicular
