@@ -5,3 +5,83 @@ exports.newMatrix = function(beforeExit, assert) {
 
     assert.equal(m.toString(), "matrix(1,0,0,1,0,0)");
 };
+
+exports.IDENTITY = function(beforeExit, assert) {
+
+};
+
+exports.multiply = function(beforeExit, assert) {
+
+};
+
+exports.inverse = function(beforeExit, assert) {
+
+};
+
+exports.translate = function(beforeExit, assert) {
+
+};
+
+exports.scale = function(beforeExit, assert) {
+
+};
+
+exports.scaleAt = function(beforeExit, assert) {
+
+};
+
+exports.scaleNonUniform = function(beforeExit, assert) {
+
+};
+
+exports.scaleNonUniformAt = function(beforeExit, assert) {
+
+};
+
+exports.rotate = function(beforeExit, assert) {
+
+};
+
+exports.rotateAt = function(beforeExit, assert) {
+
+};
+
+exports.rotateFromVector = function(beforeExit, assert) {
+
+};
+
+exports.flipX = function(beforeExit, assert) {
+
+};
+
+exports.flipY = function(beforeExit, assert) {
+
+};
+
+exports.skewX = function(beforeExit, assert) {
+
+};
+
+exports.skewY = function(beforeExit, assert) {
+
+};
+
+exports.isIdentity = function(beforeExit, assert) {
+
+};
+
+exports.isInvertible = function(beforeExit, assert) {
+
+};
+
+exports.getScale = function(beforeExit, assert) {
+
+};
+
+exports.equals = function(beforeExit, assert) {
+
+};
+
+exports.toString = function(beforeExit, assert) {
+
+};
