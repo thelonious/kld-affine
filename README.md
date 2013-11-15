@@ -50,8 +50,10 @@ A class used to represent a two-dimensional vector. This currently supports the 
 
 * Vector2D.fromPoints
 * length
+* magnitude
 * dot
 * cross
+* determinant
 * unit
 * unitEquals - deprecated
 * add
@@ -62,6 +64,7 @@ A class used to represent a two-dimensional vector. This currently supports the 
 * multiplyEquals - deprecated
 * divide
 * divideEquals - deprecated
+* angleBetween
 * perp
 * perpendicular
 * project
@@ -88,8 +91,8 @@ A class used to represent affine transformations. This current supports the foll
 * flipY
 * skewX
 * skewY
-* equals
 * isIdentity
 * isInvertible
 * getScale
+* equals
 * toString
