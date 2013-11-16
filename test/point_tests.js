@@ -202,3 +202,11 @@ exports.toString = function(beforeExit, assert) {
 
     assert.equal("point(10,20)", p.toString());
 };
+
+// exports.setX = function(beforeExit, assert) {
+//     var p = new Point2D(10, 20);
+
+//     p.x = 20;
+
+//     console.log(p.toString());
+// };

@@ -60,3 +60,11 @@ exports.equals = function(beforeExit, assert) {
 
 exports.toString = function(beforeExit, assert) {
 };
+
+// exports.setX = function(beforeExit, assert) {
+//     var v = new Vector2D(10, 20);
+
+//     v.x = 20;
+
+//     console.log(v.toString());
+// };
