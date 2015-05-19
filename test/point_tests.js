@@ -162,7 +162,7 @@ exports.rotateTransform = function(beforeExit, assert) {
 
 exports.rotateFromVectorTransform = function(beforeExit, assert) {
     var p1 = new Point2D(10, 0);
-    var v = new Vector2D(Math.PI / 4.0, Math.PI / 4.0)
+    var v = new Vector2D(Math.PI / 4.0, Math.PI / 4.0);
     var m = new Matrix2D().rotateFromVector(v);
     var p2 = p1.transform(m);
 
