@@ -7,6 +7,13 @@ exports.newVector = function(beforeExit, assert) {
     assert.equal(v.y, 20);
 };
 
+exports.vectorFromPoints = function(beforeExit, assert) {
+    var v = Vector2D.fromPoints({ x : 0, y : 0 }, { x : 10, y : 20 });
+
+    assert.equal(v.x, 10);
+    assert.equal(v.y, 20);
+};
+
 exports.fromPoints = function(beforeExit, assert) {
 };
 
