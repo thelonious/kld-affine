@@ -1,7 +1,6 @@
-kld-affine
-==========
+# kld-affine
 
-A collection of classes used for affine geometry. This currently consists of the following:
+A collection of classes used for affine geometry. This currently consists of the following classes:
 
 * Point2D
 * Vector2D
@@ -9,14 +8,11 @@ A collection of classes used for affine geometry. This currently consists of the
 
 These have been extracted from kld-intersections so they can stand alone.
 
-Please note that as of version 0.0.7, all of the self-modifying functions (like addEquals, subtractEquals, etc.) have been removed.
+## Install
 
-Install
--------
     npm install kld-affine
 
-Point2D
--------
+## Point2D
 
 A class used to represent two-dimensional points on a plane. This currently supports the following methods:
 
@@ -26,6 +22,7 @@ A class used to represent two-dimensional points on a plane. This currently supp
 * multiply
 * divide
 * equals
+* precisionEquals
 * lerp
 * distanceFrom
 * min
@@ -33,8 +30,8 @@ A class used to represent two-dimensional points on a plane. This currently supp
 * transform
 * toString
 
-Vector2D
---------
+## Vector2D
+
 A class used to represent a two-dimensional vector. This currently supports the following methods:
 
 * Vector2D.fromPoints
@@ -54,10 +51,11 @@ A class used to represent a two-dimensional vector. This currently supports the 
 * project
 * transform
 * equals
+* precisionEquals
 * toString
 
-Matrix2D
---------
+## Matrix2D
+
 A class used to represent affine transformations. This current supports the following methods:
 
 * Matrix2D.IDENTITY
@@ -78,5 +76,7 @@ A class used to represent affine transformations. This current supports the foll
 * isIdentity
 * isInvertible
 * getScale
+* getDecomposition
 * equals
+* precisionEquals
 * toString
