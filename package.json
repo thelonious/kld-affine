@@ -1,6 +1,6 @@
 {
   "name": "kld-affine",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A collection of classes used in affine geometry",
   "author": {
     "name": "Kevin Lindsey",
@@ -13,7 +13,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "expresso"
+    "test": "mocha"
   },
   "keywords": [
     "affine",
@@ -22,9 +22,9 @@
     "matrix"
   ],
   "devDependencies": {
-    "expresso": "0.9.2"
+    "mocha": "^3.4.2"
   },
   "engines": {
-    "node": ">= 0.10.4"
+    "node": ">= 6.4.0"
   }
 }
