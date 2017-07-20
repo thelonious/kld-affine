@@ -59,6 +59,18 @@ A class used to represent a two-dimensional vector. This currently supports the 
 A class used to represent affine transformations. This current supports the following methods:
 
 * Matrix2D.IDENTITY
+* Matrix2D.translation
+* Matrix2D.scaling
+* Matrix2D.scalingAt
+* Matrix2D.nonUniformScaling
+* Matrix2D.nonUniformScalingAt
+* Matrix2D.rotation
+* Matrix2D.rotationAt
+* Matrix2D.rotationFromVector
+* Matrix2D.xFlip
+* Matrix2D.yFlip
+* Matrix2D.xSkew
+* Matrix2D.ySkew
 * multiply
 * inverse
 * translate
