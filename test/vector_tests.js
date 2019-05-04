@@ -1,8 +1,7 @@
-let assert   = require('assert'),
-    Vector2D = require('../lib/Vector2D'),
-    Point2D  = require('../lib/Point2D'),
-    Matrix2D = require('../lib/Matrix2D'),
-    origin   = new Point2D(0, 0),
+let assert   = require("assert"),
+    Vector2D = require("../lib/Vector2D"),
+    Point2D  = require("../lib/Point2D"),
+    Matrix2D = require("../lib/Matrix2D"),
     p1       = new Point2D(3, 4),
     p2       = new Point2D(6, 8),
     v1       = new Vector2D(3, 4),
@@ -147,6 +146,6 @@ describe("Vector2D", () => {
     it("to string", () => {
         let str = v1.toString();
 
-        assert.equal(str, 'vector(3,4)');
+        assert.equal(str, "vector(3,4)");
     });
 });

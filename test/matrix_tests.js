@@ -1,11 +1,11 @@
-let assert   = require('assert'),
-    lib      = require('../index'),
+let assert   = require("assert"),
+    lib      = require("../index"),
     Matrix2D = lib.Matrix2D,
     Point2D  = lib.Point2D,
     Vector2D = lib.Vector2D;
 
-describe('Matrix2D', () => {
-    describe('Methods', () => {
+describe("Matrix2D", () => {
+    describe("Methods", () => {
         it("new matrix", () => {
             let m = new Matrix2D();
 
@@ -44,7 +44,7 @@ describe('Matrix2D', () => {
         */
     });
 
-    describe('Statics', () => {
+    describe("Statics", () => {
         it("IDENTITY", () => {
             let m = Matrix2D.IDENTITY;
 

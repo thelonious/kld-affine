@@ -1,9 +1,9 @@
-var assert   = require('assert'),
-    Point2D  = require('../lib/Point2D'),
-    Vector2D = require('../lib/Vector2D'),
-    Matrix2D = require('../lib/Matrix2D');
+var assert   = require("assert"),
+    Point2D  = require("../lib/Point2D"),
+    Vector2D = require("../lib/Vector2D"),
+    Matrix2D = require("../lib/Matrix2D");
 
-describe('Point2D', () => {
+describe("Point2D", () => {
     it("new point", () => {
         let p = new Point2D(10, 20);
 
