@@ -17,6 +17,9 @@
     "url": "git://github.com/thelonious/kld-affine.git"
   },
   "main": "index.js",
+  "browserslist": [
+    "cover 100%"
+  ],
   "scripts": {
     "eslint": "eslint .",
     "test": "npm run eslint && mocha",
@@ -30,6 +33,7 @@
     "vector",
     "matrix"
   ],
+  "dependencies": {},
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^10.0.3",
     "eslint": "^5.16.0",

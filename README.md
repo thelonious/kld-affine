@@ -10,7 +10,9 @@ These have been extracted from kld-intersections so they can stand alone.
 
 ## Install
 
-    npm install kld-affine
+```
+npm install kld-affine
+```
 
 ## Point2D
 
