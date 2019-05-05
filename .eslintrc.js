@@ -12,18 +12,12 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "overrides": {
-      files: ["**/*.md"],
-      rules: {
-        "eol-last": "off",
-        "no-console": "off",
-        "no-undef": "off",
-        "no-unused-vars": ["warn"],
-        "padded-blocks": "off",
-        "import/unambiguous": "off",
-        "import/no-unresolved": "off",
-        "node/no-missing-import": "off"
-      }
+    "settings": {
+        "polyfills": [
+            "Error",
+            "Object.defineProperties",
+            "Object.defineProperty"
+        ]
     },
     "overrides": [
         {
