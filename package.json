@@ -6,6 +6,9 @@
     "name": "Kevin Lindsey",
     "email": "kevin@kevlindev.com"
   },
+  "contributors": [
+    "Brett Zamir"
+  ],
   "license": "BSD-3-Clause",
   "bugs": "https://github.com/thelonious/kld-affine/issues",
   "homepage": "https://github.com/thelonious/kld-affine",
@@ -16,7 +19,10 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint .",
-    "test": "mocha"
+    "test": "npm run eslint && mocha",
+    "start": "static -p 8055",
+    "build-docs": "rm -rf docs/jsdoc/*;jsdoc --pedantic -c docs/jsdoc-config.js .",
+    "open-docs": "opn http://localhost:8055/docs/jsdoc/ && npm start"
   },
   "keywords": [
     "affine",
@@ -25,7 +31,25 @@
     "matrix"
   ],
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "@mysticatea/eslint-plugin": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-ash-nazg": "^4.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-compat": "^3.1.1",
+    "eslint-plugin-eslint-comments": "^3.1.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsdoc": "^4.8.3",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-no-use-extend-native": "^0.4.0",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-unicorn": "^8.0.2",
+    "jsdoc": "^3.6.0",
+    "mocha": "^6.1.4",
+    "node-static": "^0.7.11",
+    "opn-cli": "^4.1.0",
+    "typescript": "^3.4.5"
   },
   "engines": {
     "node": ">= 10.15.3"
