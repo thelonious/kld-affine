@@ -78,6 +78,7 @@ module.exports = {
         "valid-jsdoc": 0,
         "import/unambiguous": 0,
         "global-require": 0,
-        "import/no-commonjs": 0
+        "import/no-commonjs": 0,
+        "consistent-this": "off"
     }
 };
