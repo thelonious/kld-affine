@@ -3,14 +3,14 @@
 module.exports = {
     "env": {
         "browser": true,
-        "commonjs": true,
         "es6": true,
         "node": true,
         "mocha": true
     },
-    "extends": ["ash-nazg/sauron-node", "plugin:node/recommended-script"],
+    "extends": ["ash-nazg/sauron-node"],
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 2018,
+        "sourceType": "module"
     },
     "settings": {
         "polyfills": [
@@ -20,6 +20,17 @@ module.exports = {
         ]
     },
     "overrides": [
+        {
+            files: "docs/jsdoc-config.js",
+            globals: {
+                "module": "readonly"
+            },
+            rules: {
+                strict: "off",
+                "import/unambiguous": "off",
+                "import/no-commonjs": "off"
+            }
+        },
         {
             files: ["**/*.md"],
             rules: {
@@ -70,9 +81,6 @@ module.exports = {
         "require-unicode-regexp": "off",
         "yoda": "off",
         "valid-jsdoc": 0,
-        "import/unambiguous": 0,
-        "global-require": 0,
-        "import/no-commonjs": 0,
         "consistent-this": "off"
     }
 };

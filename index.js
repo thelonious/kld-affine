@@ -1,7 +1,5 @@
-"use strict";
-
 // expose classes
 
-exports.Point2D = require("./lib/Point2D");
-exports.Vector2D = require("./lib/Vector2D");
-exports.Matrix2D = require("./lib/Matrix2D");
+export {default as Point2D} from "./lib/Point2D.js";
+export {default as Vector2D} from "./lib/Vector2D.js";
+export {default as Matrix2D} from "./lib/Matrix2D.js";

@@ -1,7 +1,5 @@
-"use strict";
-
-const assert = require("assert");
-const {Vector2D, Point2D, Matrix2D} = require("../index.js");
+import assert from "assert";
+import {Vector2D, Point2D, Matrix2D} from "../index.js";
 
 const
     p1 = new Point2D(3, 4),

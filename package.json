@@ -16,13 +16,15 @@
     "type": "git",
     "url": "git://github.com/thelonious/kld-affine.git"
   },
-  "main": "index.js",
+  "main": "dist/index-umd.js",
+  "module": "index.js",
   "browserslist": [
     "cover 100%"
   ],
   "scripts": {
     "eslint": "eslint .",
-    "test": "npm run eslint && mocha",
+    "rollup": "rollup -c",
+    "test": "npm run eslint && npm run rollup && mocha --require @babel/register",
     "start": "static -p 8055",
     "build-docs": "rm -rf docs/jsdoc/*;jsdoc --pedantic -c docs/jsdoc-config.js .",
     "open-docs": "opn http://localhost:8055/docs/jsdoc/ && npm start"
@@ -35,6 +37,9 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
     "@mysticatea/eslint-plugin": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-config-ash-nazg": "^4.0.0",
@@ -49,10 +54,13 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-unicorn": "^8.0.2",
-    "jsdoc": "^3.6.0",
+    "jsdoc": "^3.6.1",
     "mocha": "^6.1.4",
     "node-static": "^0.7.11",
     "opn-cli": "^4.1.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-terser": "^4.0.4",
     "typescript": "^3.4.5"
   },
   "engines": {
