@@ -14,9 +14,7 @@ module.exports = {
     },
     "settings": {
         "polyfills": [
-            "Error",
-            "Object.defineProperties",
-            "Object.defineProperty"
+            "Error"
         ]
     },
     "overrides": [
