@@ -497,11 +497,10 @@ var Matrix2D =
 /*#__PURE__*/
 function () {
   /**
-   *  Matrix2D
-   *
-   *  [a c e]
-   *  [b d f]
-   *  [0 0 1]
+   *  A 2D Matrix of the form:<br>
+   *  [a c e]<br>
+   *  [b d f]<br>
+   *  [0 0 1]<br>
    *
    *  @param {number} a
    *  @param {number} b
@@ -789,8 +788,6 @@ function () {
       };
     }
     /**
-     *  getDecomposition
-     *
      *  Calculates matrix Singular Value Decomposition
      *
      *  The resulting matrices, translation, rotation, scale, and rotation0, return
@@ -799,7 +796,12 @@ function () {
      *  @see Jim Blinn's article {@link http://dx.doi.org/10.1109/38.486688}
      *  @see {@link http://math.stackexchange.com/questions/861674/decompose-a-2d-arbitrary-transform-into-only-scaling-and-rotation}
      *
-     *  @returns {{ translation: module:kld-affine.Matrix2D, rotation: module:kld-affine.Matrix2D, scale: module:kld-affine.Matrix2D, rotation0: module:kld-affine.Matrix2D }}
+     *  @returns {{
+     *    translation: module:kld-affine.Matrix2D,
+     *    rotation: module:kld-affine.Matrix2D,
+     *    scale: module:kld-affine.Matrix2D,
+     *    rotation0: module:kld-affine.Matrix2D
+     *  }}
      */
 
   }, {
