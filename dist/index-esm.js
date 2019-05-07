@@ -209,7 +209,7 @@ function () {
   }, {
     key: "toString",
     value: function toString() {
-      return "point(" + this.x + "," + this.y + ")";
+      return "point(".concat(this.x, ",").concat(this.y, ")");
     }
   }]);
 
@@ -470,7 +470,7 @@ function () {
   }, {
     key: "toString",
     value: function toString() {
-      return "vector(" + this.x + "," + this.y + ")";
+      return "vector(".concat(this.x, ",").concat(this.y, ")");
     }
   }], [{
     key: "fromPoints",
@@ -858,7 +858,7 @@ function () {
   }, {
     key: "toString",
     value: function toString() {
-      return "matrix(" + [this.a, this.b, this.c, this.d, this.e, this.f].join(",") + ")";
+      return "matrix(".concat(this.a, ",").concat(this.b, ",").concat(this.c, ",").concat(this.d, ",").concat(this.e, ",").concat(this.f, ")");
     }
   }], [{
     key: "translation",
