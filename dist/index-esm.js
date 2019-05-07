@@ -1015,6 +1015,8 @@ Matrix2D.IDENTITY.isIdentity = function () {
   return true;
 };
 
-// expose classes
+/**
+ *  @module kld-affine
+ */
 
 export { Matrix2D, Point2D, Vector2D };

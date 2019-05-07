@@ -1021,7 +1021,9 @@
     return true;
   };
 
-  // expose classes
+  /**
+   *  @module kld-affine
+   */
 
   exports.Matrix2D = Matrix2D;
   exports.Point2D = Point2D;
