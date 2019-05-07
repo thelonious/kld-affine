@@ -1,19 +1,33 @@
 {
   "name": "kld-affine",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "A collection of classes used in affine geometry",
   "author": {
     "name": "Kevin Lindsey",
     "email": "kevin@kevlindev.com"
   },
+  "contributors": [
+    "Brett Zamir"
+  ],
   "license": "BSD-3-Clause",
+  "bugs": "https://github.com/thelonious/kld-affine/issues",
+  "homepage": "https://github.com/thelonious/kld-affine",
   "repository": {
     "type": "git",
     "url": "git://github.com/thelonious/kld-affine.git"
   },
-  "main": "index.js",
+  "main": "dist/index-umd.js",
+  "module": "index.js",
+  "browserslist": [
+    "cover 100%"
+  ],
   "scripts": {
-    "test": "mocha"
+    "eslint": "eslint .",
+    "rollup": "rollup -c",
+    "test": "npm run eslint && npm run rollup && mocha --require @babel/register",
+    "start": "static -p 8055",
+    "build-docs": "rm -rf docs/jsdoc/*;jsdoc --pedantic -c docs/jsdoc-config.js .",
+    "open-docs": "opn http://localhost:8055/docs/jsdoc/ && npm start"
   },
   "keywords": [
     "affine",
@@ -21,10 +35,35 @@
     "vector",
     "matrix"
   ],
+  "dependencies": {},
   "devDependencies": {
-    "mocha": "^3.4.2"
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "@mysticatea/eslint-plugin": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-ash-nazg": "^4.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-compat": "^3.1.1",
+    "eslint-plugin-eslint-comments": "^3.1.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsdoc": "^4.8.3",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-no-use-extend-native": "^0.4.0",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-unicorn": "^8.0.2",
+    "jsdoc": "^3.6.1",
+    "mocha": "^6.1.4",
+    "node-static": "^0.7.11",
+    "opn-cli": "^4.1.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-terser": "^4.0.4",
+    "typescript": "^3.4.5"
   },
   "engines": {
-    "node": ">= 6.4.0"
+    "node": ">= 10.15.3"
   }
 }
