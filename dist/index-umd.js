@@ -71,7 +71,7 @@
       /**
        *  add
        *
-       *  @param {Point2D|Vector2D} that
+       *  @param {module:kld-affine.Point2D} that
        *  @returns {module:kld-affine.Point2D}
        */
 
@@ -83,7 +83,7 @@
       /**
        *  subtract
        *
-       *  @param { Vector2D | Point2D } that
+       *  @param {module:kld-affine.Point2D} that
        *  @returns {module:kld-affine.Point2D}
        */
 
@@ -796,8 +796,8 @@
       /**
        *  Calculates matrix Singular Value Decomposition
        *
-       *  The resulting matrices, translation, rotation, scale, and rotation0, return
-       *  this matrix when they are muliplied together in the listed order
+       *  The resulting matrices — translation, rotation, scale, and rotation0 — return
+       *  this matrix when they are multiplied together in the listed order
        *
        *  @see Jim Blinn's article {@link http://dx.doi.org/10.1109/38.486688}
        *  @see {@link http://math.stackexchange.com/questions/861674/decompose-a-2d-arbitrary-transform-into-only-scaling-and-rotation}
