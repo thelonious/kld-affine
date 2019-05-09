@@ -1,18 +1,57 @@
 # kld-affine
 
+- [Installation](#installation)
+- [Importing](#importing)
+- [API](#api)
+
+---
+
 A collection of classes used for affine geometry. This currently consists of the following classes:
 
 * Point2D
 * Vector2D
 * Matrix2D
 
-These have been extracted from kld-intersections so they can stand alone.
-
-## Install
+# Installation
 
 ```
 npm install kld-affine
 ```
+
+# Importing
+
+The following sections indicate how you can import the code for use in various environments.
+
+## Node
+
+```javascript
+import {Point2D, Vector2D, Matrix2D} = require("kld-affine");
+```
+
+## ESM in Modern Browsers
+
+```javascript
+import {Point2D, Vector2D, Matrix2D} from './node_modules/kld-affine/dist/index-esm.js';
+```
+
+## Older Browsers
+
+```html
+<script src="./node_modules/kld-affine/dist/index-umd.js"></script>
+<script>
+  var Point2D = KldAffine.Point2D;
+  var Vector2D = KldAffine.Vector2D;
+  var Matrix2D = KldAffine.Matrix2D;
+</script>
+```
+
+## Bundlers
+
+```javascript
+import {Point2D, Vector2D, Matrix2D} from "kld-affine";
+```
+
+# API
 
 ## Point2D
 
