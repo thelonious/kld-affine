@@ -41,11 +41,14 @@ function () {
    *  @param {number} y
    *  @returns {module:kld-affine.Point2D}
    */
-  function Point2D(x, y) {
+  function Point2D() {
+    var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
     _classCallCheck(this, Point2D);
 
-    this.x = x !== undefined ? x : 0.0;
-    this.y = y !== undefined ? y : 0.0;
+    this.x = x;
+    this.y = y;
   }
   /**
    *  clone
@@ -206,7 +209,7 @@ function () {
   }, {
     key: "toString",
     value: function toString() {
-      return "point(" + this.x + "," + this.y + ")";
+      return "point(".concat(this.x, ",").concat(this.y, ")");
     }
   }]);
 
@@ -234,11 +237,14 @@ function () {
    *  @param {number} y
    *  @returns {module:kld-affine.Vector2D}
    */
-  function Vector2D(x, y) {
+  function Vector2D() {
+    var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
     _classCallCheck(this, Vector2D);
 
-    this.x = x !== undefined ? x : 0.0;
-    this.y = y !== undefined ? y : 0.0;
+    this.x = x;
+    this.y = y;
   }
   /**
    *  fromPoints
@@ -464,7 +470,7 @@ function () {
   }, {
     key: "toString",
     value: function toString() {
-      return "vector(" + this.x + "," + this.y + ")";
+      return "vector(".concat(this.x, ",").concat(this.y, ")");
     }
   }], [{
     key: "fromPoints",
@@ -491,11 +497,10 @@ var Matrix2D =
 /*#__PURE__*/
 function () {
   /**
-   *  Matrix2D
-   *
-   *  [a c e]
-   *  [b d f]
-   *  [0 0 1]
+   *  A 2D Matrix of the form:<br>
+   *  [a c e]<br>
+   *  [b d f]<br>
+   *  [0 0 1]<br>
    *
    *  @param {number} a
    *  @param {number} b
@@ -505,15 +510,22 @@ function () {
    *  @param {number} f
    *  @returns {module:kld-affine.Matrix2D}
    */
-  function Matrix2D(a, b, c, d, e, f) {
+  function Matrix2D() {
+    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+    var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+    var c = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+    var d = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
+    var e = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
+    var f = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+
     _classCallCheck(this, Matrix2D);
 
-    this.a = a !== undefined ? a : 1;
-    this.b = b !== undefined ? b : 0;
-    this.c = c !== undefined ? c : 0;
-    this.d = d !== undefined ? d : 1;
-    this.e = e !== undefined ? e : 0;
-    this.f = f !== undefined ? f : 0;
+    this.a = a;
+    this.b = b;
+    this.c = c;
+    this.d = d;
+    this.e = e;
+    this.f = f;
   }
   /**
    *  translation
@@ -776,8 +788,6 @@ function () {
       };
     }
     /**
-     *  getDecomposition
-     *
      *  Calculates matrix Singular Value Decomposition
      *
      *  The resulting matrices, translation, rotation, scale, and rotation0, return
@@ -786,7 +796,12 @@ function () {
      *  @see Jim Blinn's article {@link http://dx.doi.org/10.1109/38.486688}
      *  @see {@link http://math.stackexchange.com/questions/861674/decompose-a-2d-arbitrary-transform-into-only-scaling-and-rotation}
      *
-     *  @returns {{ translation: module:kld-affine.Matrix2D, rotation: module:kld-affine.Matrix2D, scale: module:kld-affine.Matrix2D, rotation0: module:kld-affine.Matrix2D }}
+     *  @returns {{
+     *    translation: module:kld-affine.Matrix2D,
+     *    rotation: module:kld-affine.Matrix2D,
+     *    scale: module:kld-affine.Matrix2D,
+     *    rotation0: module:kld-affine.Matrix2D
+     *  }}
      */
 
   }, {
@@ -845,7 +860,7 @@ function () {
   }, {
     key: "toString",
     value: function toString() {
-      return "matrix(" + [this.a, this.b, this.c, this.d, this.e, this.f].join(",") + ")";
+      return "matrix(".concat(this.a, ",").concat(this.b, ",").concat(this.c, ",").concat(this.d, ",").concat(this.e, ",").concat(this.f, ")");
     }
   }], [{
     key: "translation",
