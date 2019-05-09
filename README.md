@@ -3,6 +3,7 @@
 - [Installation](#installation)
 - [Importing](#importing)
 - [API](#api)
+- [Links and Related Projects](#links-and-related-projects)
 
 ---
 
@@ -133,3 +134,8 @@ A class used to represent affine transformations. This current supports the foll
 * equals
 * precisionEquals
 * toString
+
+# Links and Related Projects
+
+- [kld-intersections](https://github.com/thelonious/kld-intersections)
+- [kld-contours](https://github.com/thelonious/kld-contours)
