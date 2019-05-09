@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" onload="go()">
-    <script xlink:href="../lib/Matrix2D.js"/>
-    <script xlink:href="../lib/Point2D.js"/>
+    <script xlink:href="../dist/index-umd.js"/>
     <script><![CDATA[
+        const Point2D = KldAffine.Point2D;
+        const Matrix2D = KldAffine.Matrix2D;
+
         function go() {
             let c = new Point2D(10, 10);
             let m = new Matrix2D();
