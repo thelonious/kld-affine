@@ -3,6 +3,8 @@ declare module 'kld-affine' {
     x: number
     y: number
 
+    constructor (x: number, y: number)
+
     clone (): Point2D
 
     add (that: Point2D): Point2D
@@ -33,6 +35,8 @@ declare module 'kld-affine' {
   class Vector2D {
     x: number
     y: number
+
+    constructor (x: number, y: number)
 
     fromPoint(p1: Point2D, p2: Point2D): Vector2D
 
@@ -80,6 +84,8 @@ declare module 'kld-affine' {
     d: number
     e: number
     f: number
+
+    constructor (a: number, b: number, c: number, d: number, e: number, f: number)
 
     static IDENTITY: Matrix2D
 
