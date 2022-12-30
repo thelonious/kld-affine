@@ -55,7 +55,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-unicorn": "^8.0.2",
     "jsdoc": "^3.6.1",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "node-static": "^0.7.11",
     "opn-cli": "^4.1.0",
     "rollup": "^1.11.3",
